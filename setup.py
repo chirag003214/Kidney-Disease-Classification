@@ -8,7 +8,7 @@ _version_ = "0.0.1"
 
 REPO_NAME = "Kidney-Disease-Classification" 
 AUTHOR_USER_NAME = "saagr3214"
-SRC_REPO = "cnnclassifier"
+SRC_REPO = "Kidney-Disease-Classification"
 AUTHOR_EMAIL = "csharma@kgpian.iitkgp.ac.in"
 
 
