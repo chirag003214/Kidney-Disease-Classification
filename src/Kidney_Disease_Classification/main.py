@@ -1,4 +1,4 @@
-from                                                         Kidney_Disease_Classification import logger
+from Kidney_Disease_Classification import logger
 from Kidney_Disease_Classification.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 
 
