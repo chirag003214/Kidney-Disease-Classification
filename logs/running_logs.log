@@ -1,3 +1,13 @@
 [2025-06-08 17:51:09,378: INFO: main: This is an info message from the Kidney Disease Classification module.]
 [2025-06-08 18:09:17,141: INFO: main: This is an info message from the Kidney Disease Classification module.]
 [2025-06-08 18:16:22,284: INFO: main: This is an info message from the Kidney Disease Classification module.]
+[2025-06-21 10:37:51,950: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-06-21 10:37:51,964: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-21 10:37:51,978: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-21 10:37:51,979: INFO: common: created directory at: artifacts]
+[2025-06-21 10:37:51,979: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-21 10:37:51,979: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/11-1L5Ee7Ot-oDBnJY-B6CDwgnM8rFC6e/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-06-21 10:41:08,670: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/11-1L5Ee7Ot-oDBnJY-B6CDwgnM8rFC6e/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-06-21 10:41:51,667: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
