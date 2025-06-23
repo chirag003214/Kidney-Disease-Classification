@@ -1,8 +1,8 @@
-AUGMENTAION: True
-IMAGE_SIZE: [224, 224, 3]
-BATCH_SIZE: 16
-INCLUDE_TOP: False
-EPOCHS: 100
-CLASSES: 2
-WEIGHTS: imagenet
-LEARNING_RATE: 0.001
+augmentation: True
+image_size: [224, 224, 3]
+batch_size: 16
+include_top: False
+epochs: 2
+classes: 2
+weights: imagenet
+learning_rate: 0.01
