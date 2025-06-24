@@ -38,4 +38,40 @@ conda activate Kidney-Disease-Classification
 
 ```bash
 pip install -r requirements.txt
+```
+
+
+## MLflow
+
+[Documentation](https://mlflow.org/docs/latest/index.html)
+
+##### cmd
+-mlflow ui
+
+
+### Dagshub
+[Dagshub](https://dagshub.com/)
+
+MLFLOW_TRACKING_URI=https://dagshub.com/chirag003214/Kidney-Disease-Classification.mlflow
+MLFLOW_TRACKING_USERNAME=chirag003214
+MLFLOW_TRACKING_PASSWORD=f92e4c8b3ec9f4390eb110baf4df4125dcb26a2b
+python script.py 
+
+Run this to export as env variables:
+
+
+```bash
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/chirag003214/Kidney-Disease-Classification.mlflow
+
+export TRACKING_USERNAME=chirag003214
+
+export MLFLOW_TRACKING_PASSWORD=f92e4c8b3ec9f4390eb110baf4df4125dcb26a2b
+
+
+
+
+
+
+
 

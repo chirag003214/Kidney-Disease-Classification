@@ -1,7 +1,9 @@
 from Kidney_Disease_Classification.constants import *
-from Kidney_Disease_Classification.utils.common import read_yaml, create_directories
+from Kidney_Disease_Classification.utils.common import read_yaml, create_directories,save_json
 from Kidney_Disease_Classification.entities.config_entity import(DataIngestionConfig,
-                                                                PrepareBaseModelConfig)
+                                                                PrepareBaseModelConfig,
+                                                                TrainingConfig,
+                                                                EvaluationConfig)
 
 
 class ConfigurationManager:
@@ -69,3 +71,16 @@ class ConfigurationManager:
             params_is_augmentation=params.AUGMENTATION,
             params_image_size=params.IMAGE_SIZE
         )
+    
+    def get_evaluation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+        path_of_model="artifacts/training/model.h5",
+        training_data="artifacts/data_ingestion",
+        mlflow_uri="https://dagshub.com/chirag003214/Kidney-Disease-Classification.mlflow",
+        all_params=self.params,
+        params_image_size=self.params.IMAGE_SIZE,
+        params_batch_size=self.params.BATCH_SIZE
+         # ✅ RIGHT
+
+        )
+        return eval_config
