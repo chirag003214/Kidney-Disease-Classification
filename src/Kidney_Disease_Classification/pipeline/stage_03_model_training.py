@@ -33,3 +33,20 @@ if __name__ == '__main__':
         logger.exception(e)
         raise e
         
+import os
+import shutil
+
+# Define source and destination
+source = "artifacts/prepare_base_model/updated_model.h5"
+destination_dir = "prediction_model"
+destination = os.path.join(destination_dir, "updated_model.h5")
+
+# Create the destination folder if it doesn't exist
+os.makedirs(destination_dir, exist_ok=True)
+
+# Move the model file
+if os.path.exists(source):
+    shutil.move(source, destination)
+    print(f"✅ Moved updated_model.h5 to {destination}")
+else:
+    print("❌ updated_model.h5 not found in artifacts/prepare_base_model.") 

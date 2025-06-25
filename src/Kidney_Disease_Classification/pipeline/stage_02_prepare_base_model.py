@@ -4,6 +4,7 @@ import os
 from Kidney_Disease_Classification.config.configuration import ConfigurationManager
 from Kidney_Disease_Classification.components.prepare_base_model import PrepareBaseModel
 from Kidney_Disease_Classification import logger
+import shutil
 
 STAGE_NAME = "Prepare Base Model Stage"
 
@@ -32,3 +33,6 @@ if __name__ == '__main__':
     except Exception as e:
         logger.exception(e)
         raise e
+
+
+

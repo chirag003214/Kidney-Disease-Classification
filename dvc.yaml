@@ -29,13 +29,13 @@ stages:
       - src/Kidney_Disease_Classification/pipeline/stage_03_model_training.py
       - config/config.yaml
       - artifacts/data_ingestion
-      - artifacts/prepare_base_model
     params:
       - image_size
       - batch_size
       - epochs
       - augmentation
     outs:
+      - prediction_model/updated_model.h5
       - artifacts/training/model.h5
 
 

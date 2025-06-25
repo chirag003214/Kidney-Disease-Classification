@@ -126,10 +126,20 @@ def get_size(path: Path) -> str:
 
 
 def decodeImage(imgstring, fileName):
-    imgdata = base64.b64decode(imgstring)
-    with open(fileName, 'wb') as f:
-        f.write(imgdata)
-        f.close()
+    try:
+        # If image string has base64 header, remove it
+        if imgstring.startswith("data:image"):
+            imgstring = imgstring.split(",")[1]
+        
+        imgdata = base64.b64decode(imgstring)
+        with open(fileName, 'wb') as f:
+            f.write(imgdata)
+        print(f"[decodeImage] Image saved to {fileName}")
+
+    except Exception as e:
+        print("[decodeImage] Failed:", e)
+        raise e
+
 
 
 def encodeImageIntoBase64(croppedImagePath):
