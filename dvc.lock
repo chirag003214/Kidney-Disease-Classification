@@ -1,0 +1,121 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python 
+      src/Kidney_Disease_Classification/pipeline/stage_01_data_ingestion.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: 6b4458ece469a29a58230df318d17dc2
+      size: 768
+    - path: 
+        src/Kidney_Disease_Classification/pipeline/stage_01_data_ingestion.py
+      hash: md5
+      md5: ed97d2b7372982eb34b659c741400026
+      size: 956
+    outs:
+    - path: artifacts/data_ingestion
+      hash: md5
+      md5: abc2f23aed982e51c007c3bc234ae6d0.dir
+      size: 1901167383
+      nfiles: 7361
+  prepare_base_model:
+    cmd: python 
+      src/Kidney_Disease_Classification/pipeline/stage_02_prepare_base_model.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: 6b4458ece469a29a58230df318d17dc2
+      size: 768
+    - path: 
+        src/Kidney_Disease_Classification/pipeline/stage_02_prepare_base_model.py
+      hash: md5
+      md5: 734b7bc78f55b8cab2ca08c45454e24a
+      size: 1046
+    params:
+      params.yaml:
+        classes: 2
+        image_size:
+        - 224
+        - 224
+        - 3
+        include_top: false
+        learning_rate: 0.01
+        weights: imagenet
+    outs:
+    - path: artifacts/prepare_base_model
+      hash: md5
+      md5: 04e5efc35be731b118c0f29be682eace.dir
+      size: 118054560
+      nfiles: 2
+  training:
+    cmd: python 
+      src/Kidney_Disease_Classification/pipeline/stage_03_model_training.py
+    deps:
+    - path: artifacts/data_ingestion
+      hash: md5
+      md5: abc2f23aed982e51c007c3bc234ae6d0.dir
+      size: 1901167383
+      nfiles: 7361
+    - path: artifacts/prepare_base_model
+      hash: md5
+      md5: 04e5efc35be731b118c0f29be682eace.dir
+      size: 118054560
+      nfiles: 2
+    - path: config/config.yaml
+      hash: md5
+      md5: 6b4458ece469a29a58230df318d17dc2
+      size: 768
+    - path: 
+        src/Kidney_Disease_Classification/pipeline/stage_03_model_training.py
+      hash: md5
+      md5: f2f9b56a166e5b974bc7943aeb9427c4
+      size: 1058
+    params:
+      params.yaml:
+        augmentation: true
+        batch_size: 32
+        epochs: 1
+        image_size:
+        - 224
+        - 224
+        - 3
+    outs:
+    - path: artifacts/training/model.h5
+      hash: md5
+      md5: 1a76a73271ff715bf1c4338d1ad99919
+      size: 59337520
+  evaluation:
+    cmd: python 
+      src/Kidney_Disease_Classification/pipeline/stage_04_model_evaluation.py
+    deps:
+    - path: artifacts/data_ingestion
+      hash: md5
+      md5: abc2f23aed982e51c007c3bc234ae6d0.dir
+      size: 1901167383
+      nfiles: 7361
+    - path: artifacts/training/model.h5
+      hash: md5
+      md5: 1a76a73271ff715bf1c4338d1ad99919
+      size: 59337520
+    - path: config/config.yaml
+      hash: md5
+      md5: 6b4458ece469a29a58230df318d17dc2
+      size: 768
+    - path: 
+        src/Kidney_Disease_Classification/pipeline/stage_04_model_evaluation.py
+      hash: md5
+      md5: 835d490d7ecaa2d77327f31b78a634b1
+      size: 967
+    params:
+      params.yaml:
+        batch_size: 32
+        image_size:
+        - 224
+        - 224
+        - 3
+    outs:
+    - path: scores.json
+      hash: md5
+      md5: 62a6f6b54556b0e09669d29400151730
+      size: 72

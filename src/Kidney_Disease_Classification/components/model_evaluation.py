@@ -3,8 +3,8 @@ from pathlib import Path
 import mlflow
 import mlflow.keras
 from urllib.parse import urlparse
-from src.Kidney_Disease_Classification.entities.config_entity import EvaluationConfig
-from src.Kidney_Disease_Classification.utils.common import save_json
+from Kidney_Disease_Classification.entities.config_entity import EvaluationConfig
+from Kidney_Disease_Classification.utils.common import save_json
 
 
 class Evaluation:
@@ -45,7 +45,10 @@ class Evaluation:
     def evaluation(self):
         self.model = self.load_model(self.config.path_of_model)
         self._valid_generator()
-        self.score = model.evaluate(self.valid_generator)
+        self.score = self.model.evaluate(
+            self.valid_generator,
+            verbose=1
+        )
         self.save_score()
 
     def save_score(self):

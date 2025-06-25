@@ -1,4 +1,5 @@
-from Kidney_Disease_Classification.components.data_ingestion import DataIngestion
+from Kidney_Disease_Classification.components.model_evaluation import Evaluation
+
 from Kidney_Disease_Classification.config.configuration import ConfigurationManager
 from Kidney_Disease_Classification import logger
 
