@@ -35,8 +35,8 @@ stages:
       - epochs
       - augmentation
     outs:
-      - prediction_model/updated_model.h5
       - artifacts/training/model.h5
+    
 
 
   evaluation:

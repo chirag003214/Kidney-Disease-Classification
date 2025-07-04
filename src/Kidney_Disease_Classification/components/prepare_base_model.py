@@ -5,7 +5,7 @@ from zipfile import ZipFile
 import tensorflow as tf
 from pathlib import Path
 from Kidney_Disease_Classification.entities.config_entity import PrepareBaseModelConfig
-
+from tensorflow.keras.optimizers import SGD
 
 class PrepareBaseModel:
     def __init__(self, config: PrepareBaseModelConfig):
@@ -26,7 +26,7 @@ class PrepareBaseModel:
                 layer.trainable = False  # Fixed: previously `model.trainable = False`
 
         elif (freeze_till is not None) and (freeze_till > 0):
-            for layer in model.layers[:-freeze_till]:
+            for layer in model.layers[:15]:
                 layer.trainable = False  # Fixed
 
         flatten_in = tf.keras.layers.Flatten()(model.output)
@@ -42,7 +42,7 @@ class PrepareBaseModel:
 
         full_model.compile(
             optimizer=tf.keras.optimizers.SGD(learning_rate=learning_rate),
-            loss=tf.keras.losses.BinaryCrossentropy(),
+            loss='binary_crossentropy',
             metrics=["accuracy"]
         )
 
@@ -53,10 +53,12 @@ class PrepareBaseModel:
         self.full_model = self._prepare_full_model(
             model=self.model,
             classes=self.config.params_classes,
-            freeze_all=True,
-            freeze_till=None,
+            freeze_all=False,
+            freeze_till=15,
             learning_rate=self.config.params_learning_rate
         )
+        for i, layer in enumerate(self.full_model.layers):
+            print(f"Layer {i} ({layer.name}): trainable = {layer.trainable}")
 
         self.save_model(path=self.config.updated_base_model_path, model=self.full_model)
 

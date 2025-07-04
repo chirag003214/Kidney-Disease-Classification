@@ -3,6 +3,8 @@ from src.Kidney_Disease_Classification.pipeline.stage_01_data_ingestion import D
 from src.Kidney_Disease_Classification.pipeline.stage_02_prepare_base_model import PrepareBaseModelPipeline
 from Kidney_Disease_Classification.pipeline.stage_03_model_training import ModelTrainingPipeline
 from src.Kidney_Disease_Classification.pipeline.stage_04_model_evaluation import EvaluationPipeline
+from Kidney_Disease_Classification.components.data_ingestion import DataIngestion
+
 
 STAGE_NAME = "Data Ingestion stage"
 if __name__ == '__main__':

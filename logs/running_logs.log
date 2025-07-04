@@ -1052,3 +1052,322 @@ x==========x]
 [2025-06-25 18:05:28,301: INFO: common: yaml file: params.yaml loaded successfully]
 [2025-06-25 18:05:28,301: INFO: common: created directory at: artifacts]
 [2025-06-25 18:05:28,302: INFO: common: created directory at: artifacts\training]
+[2025-06-30 11:33:20,269: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 11:33:20,274: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 11:33:20,276: INFO: common: created directory at: artifacts]
+[2025-06-30 11:33:20,277: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-30 11:33:20,279: INFO: 328411276: Downloading data from https://drive.google.com/file/d/11-1L5Ee7Ot-oDBnJY-B6CDwgnM8rFC6e/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-06-30 11:38:22,085: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 11:38:22,103: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 11:38:22,110: INFO: common: created directory at: artifacts]
+[2025-06-30 11:38:22,114: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-30 11:38:22,117: INFO: 328411276: Downloading data from https://drive.google.com/file/d/11-1L5Ee7Ot-oDBnJY-B6CDwgnM8rFC6e/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-06-30 11:45:34,970: INFO: 328411276: Downloaded data from https://drive.google.com/file/d/11-1L5Ee7Ot-oDBnJY-B6CDwgnM8rFC6e/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-06-30 11:46:07,533: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 11:46:07,917: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 11:46:07,919: INFO: common: created directory at: artifacts]
+[2025-06-30 11:46:07,920: INFO: common: created directory at: artifacts\training]
+[2025-06-30 11:48:51,886: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 11:48:51,894: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 11:48:51,897: INFO: common: created directory at: artifacts]
+[2025-06-30 11:48:51,900: INFO: common: created directory at: prediction_model]
+[2025-06-30 11:48:52,575: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-06-30 11:48:58,130: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 11:48:58,133: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 11:48:58,135: INFO: common: created directory at: artifacts]
+[2025-06-30 11:48:58,136: INFO: common: created directory at: prediction_model]
+[2025-06-30 11:48:58,593: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-06-30 12:29:03,440: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 12:29:03,466: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 12:29:03,474: INFO: common: created directory at: artifacts]
+[2025-06-30 12:29:03,477: INFO: common: created directory at: prediction_model]
+[2025-06-30 12:29:04,530: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-06-30 12:29:45,587: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 12:29:45,612: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 12:29:45,617: INFO: common: created directory at: artifacts]
+[2025-06-30 12:29:45,624: INFO: common: created directory at: artifacts\training]
+[2025-06-30 15:50:48,778: INFO: stage_03_model_training: *******************]
+[2025-06-30 15:50:48,779: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-06-30 15:50:48,806: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 15:50:48,811: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 15:50:48,812: INFO: common: created directory at: artifacts]
+[2025-06-30 15:50:48,813: INFO: common: created directory at: artifacts\training]
+[2025-06-30 19:56:19,415: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-06-30 20:14:55,921: INFO: stage_03_model_training: *******************]
+[2025-06-30 20:14:55,921: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-06-30 20:14:55,937: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 20:14:55,937: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 20:14:55,937: INFO: common: created directory at: artifacts]
+[2025-06-30 20:14:55,937: INFO: common: created directory at: artifacts\training]
+[2025-06-30 23:26:49,875: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-06-30 23:27:24,387: INFO: stage_04_model_evaluation: *******************]
+[2025-06-30 23:27:24,387: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-06-30 23:27:24,405: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-30 23:27:24,405: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-30 23:27:24,409: INFO: common: created directory at: artifacts]
+[2025-06-30 23:34:16,807: INFO: common: json file saved at: scores.json]
+[2025-06-30 23:34:16,810: INFO: common: json file saved at: scores.json]
+[2025-06-30 23:34:16,812: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-07-01 10:54:18,183: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.69.98.185:8080]
+[2025-07-01 10:54:18,185: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-01 10:54:18,185: INFO: _internal:  * Restarting with stat]
+[2025-07-01 10:54:25,461: WARNING: _internal:  * Debugger is active!]
+[2025-07-01 10:54:25,475: INFO: _internal:  * Debugger PIN: 250-466-829]
+[2025-07-01 10:54:42,009: INFO: _internal: 127.0.0.1 - - [01/Jul/2025 10:54:42] "GET / HTTP/1.1" 200 -]
+[2025-07-01 10:55:13,931: INFO: _internal: 127.0.0.1 - - [01/Jul/2025 10:55:13] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-07-01 10:58:04,814: INFO: _internal:  * Detected change in 'c:\\users\\chirag sharma\\desktop\\gitdemo\\kidney-disease-classification\\src\\Kidney_Disease_Classification\\pipeline\\prediction.py', reloading]
+[2025-07-01 10:58:06,272: INFO: _internal:  * Restarting with stat]
+[2025-07-01 10:58:16,238: WARNING: _internal:  * Debugger is active!]
+[2025-07-01 10:58:16,251: INFO: _internal:  * Debugger PIN: 250-466-829]
+[2025-07-01 10:58:38,824: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.69.98.185:8080]
+[2025-07-01 10:58:38,824: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-01 10:58:38,829: INFO: _internal:  * Restarting with stat]
+[2025-07-01 10:58:45,660: WARNING: _internal:  * Debugger is active!]
+[2025-07-01 10:58:45,660: INFO: _internal:  * Debugger PIN: 250-466-829]
+[2025-07-01 10:59:02,791: INFO: _internal: 127.0.0.1 - - [01/Jul/2025 10:59:02] "GET / HTTP/1.1" 200 -]
+[2025-07-01 10:59:15,091: INFO: _internal: 127.0.0.1 - - [01/Jul/2025 10:59:15] "POST /predict HTTP/1.1" 200 -]
+[2025-07-01 11:01:12,298: INFO: _internal: 127.0.0.1 - - [01/Jul/2025 11:01:12] "POST /predict HTTP/1.1" 200 -]
+[2025-07-01 11:01:25,281: INFO: _internal: 127.0.0.1 - - [01/Jul/2025 11:01:25] "POST /predict HTTP/1.1" 200 -]
+[2025-07-01 11:01:39,365: INFO: _internal: 127.0.0.1 - - [01/Jul/2025 11:01:39] "POST /predict HTTP/1.1" 200 -]
+[2025-07-01 18:13:08,017: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 18:13:08,033: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 18:13:08,034: INFO: common: created directory at: artifacts]
+[2025-07-01 18:13:08,036: INFO: common: created directory at: prediction_model]
+[2025-07-01 18:13:09,009: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-01 18:16:00,977: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 18:16:00,984: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 18:16:00,988: INFO: common: created directory at: artifacts]
+[2025-07-01 18:16:00,992: INFO: common: created directory at: prediction_model]
+[2025-07-01 18:16:01,836: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-01 18:19:50,531: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 18:19:50,538: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 18:19:50,541: INFO: common: created directory at: artifacts]
+[2025-07-01 18:19:50,544: INFO: common: created directory at: prediction_model]
+[2025-07-01 18:19:51,198: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-01 18:20:23,941: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.69.98.185:8080]
+[2025-07-01 18:20:23,941: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-01 18:20:23,946: INFO: _internal:  * Restarting with stat]
+[2025-07-01 18:20:32,246: WARNING: _internal:  * Debugger is active!]
+[2025-07-01 18:20:32,259: INFO: _internal:  * Debugger PIN: 250-466-829]
+[2025-07-01 18:20:42,702: INFO: _internal: 127.0.0.1 - - [01/Jul/2025 18:20:42] "GET / HTTP/1.1" 200 -]
+[2025-07-01 18:21:00,738: INFO: _internal: 127.0.0.1 - - [01/Jul/2025 18:21:00] "POST /predict HTTP/1.1" 200 -]
+[2025-07-01 18:35:08,509: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 18:35:08,570: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 18:35:08,577: INFO: common: created directory at: artifacts]
+[2025-07-01 18:35:08,582: INFO: common: created directory at: artifacts]
+[2025-07-01 18:35:09,801: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-01 18:36:13,569: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 18:36:13,575: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 18:36:13,579: INFO: common: created directory at: artifacts]
+[2025-07-01 18:36:13,581: INFO: common: created directory at: artifacts]
+[2025-07-01 18:36:14,388: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-01 18:38:53,053: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 18:38:53,059: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 18:38:53,061: INFO: common: created directory at: artifacts]
+[2025-07-01 18:38:53,063: INFO: common: created directory at: artifacts]
+[2025-07-01 18:38:53,753: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-01 18:41:33,310: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 18:41:33,317: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 18:41:33,323: INFO: common: created directory at: artifacts]
+[2025-07-01 18:41:33,327: INFO: common: created directory at: artifacts]
+[2025-07-01 18:41:34,220: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-01 18:42:13,006: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 18:42:13,010: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 18:42:13,012: INFO: common: created directory at: artifacts]
+[2025-07-01 18:42:13,020: INFO: common: created directory at: artifacts]
+[2025-07-01 18:42:13,602: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-01 18:48:14,705: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 18:48:14,726: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 18:48:14,732: INFO: common: created directory at: artifacts]
+[2025-07-01 18:48:14,738: INFO: common: created directory at: artifacts]
+[2025-07-01 18:48:15,641: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-01 18:51:36,475: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 18:51:36,479: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 18:51:36,481: INFO: common: created directory at: artifacts]
+[2025-07-01 18:51:36,484: INFO: common: created directory at: artifacts]
+[2025-07-01 18:51:37,066: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-01 18:51:59,312: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 18:51:59,318: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 18:51:59,321: INFO: common: created directory at: artifacts]
+[2025-07-01 18:51:59,324: INFO: common: created directory at: artifacts]
+[2025-07-01 18:51:59,943: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-01 18:56:05,575: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 18:56:05,600: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 18:56:05,613: INFO: common: created directory at: artifacts]
+[2025-07-01 18:56:05,619: INFO: common: created directory at: artifacts]
+[2025-07-01 18:56:06,713: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-01 18:56:33,058: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-07-01 18:56:33,063: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 18:56:33,066: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 18:56:33,067: INFO: common: created directory at: artifacts]
+[2025-07-01 18:56:33,068: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-01 18:56:33,069: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/11-1L5Ee7Ot-oDBnJY-B6CDwgnM8rFC6e/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-07-01 19:04:51,411: ERROR: stage_01_data_ingestion: ("Connection broken: ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)", ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))]
+Traceback (most recent call last):
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\site-packages\urllib3\response.py", line 444, in _error_catcher
+    yield
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\site-packages\urllib3\response.py", line 567, in read
+    data = self._fp_read(amt) if not fp_closed else b""
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\site-packages\urllib3\response.py", line 533, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\http\client.py", line 459, in read
+    n = self.readinto(b)
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\http\client.py", line 503, in readinto
+    n = self.fp.readinto(b)
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\socket.py", line 681, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\ssl.py", line 1132, in read
+    return self._sslobj.read(len, buffer)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\site-packages\requests\models.py", line 820, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\site-packages\urllib3\response.py", line 628, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\site-packages\urllib3\response.py", line 593, in read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\site-packages\urllib3\response.py", line 461, in _error_catcher
+    raise ProtocolError("Connection broken: %r" % e, e)
+urllib3.exceptions.ProtocolError: ("Connection broken: ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)", ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/Kidney_Disease_Classification/pipeline/stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "src/Kidney_Disease_Classification/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "c:\users\chirag sharma\desktop\gitdemo\kidney-disease-classification\src\Kidney_Disease_Classification\components\data_ingestion.py", line 33, in download_file
+    raise e
+  File "c:\users\chirag sharma\desktop\gitdemo\kidney-disease-classification\src\Kidney_Disease_Classification\components\data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\site-packages\gdown\download.py", line 368, in download
+    for chunk in res.iter_content(chunk_size=CHUNK_SIZE):
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\site-packages\requests\models.py", line 822, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ("Connection broken: ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)", ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))
+[2025-07-01 19:26:12,444: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-07-01 19:26:12,448: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 19:26:12,452: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 19:26:12,453: INFO: common: created directory at: artifacts]
+[2025-07-01 19:26:12,454: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-01 19:26:12,455: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/11-1L5Ee7Ot-oDBnJY-B6CDwgnM8rFC6e/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-07-01 19:46:01,985: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/11-1L5Ee7Ot-oDBnJY-B6CDwgnM8rFC6e/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-07-01 19:46:31,559: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-07-01 19:51:04,914: INFO: stage_02_prepare_base_model: *******************]
+[2025-07-01 19:51:04,915: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare Base Model Stage started <<<<<<]
+[2025-07-01 19:51:04,920: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 19:51:04,924: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 19:51:04,926: INFO: common: created directory at: artifacts]
+[2025-07-01 19:51:04,926: INFO: common: created directory at: artifacts]
+[2025-07-01 19:51:05,671: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-01 19:51:06,962: ERROR: stage_02_prepare_base_model: Unknown optimizer: 'tf.keras.optimizers.SGD(learning_rate=learning_rate)'. Please ensure you are using a `keras.utils.custom_object_scope` and that this object is included in the scope. See https://www.tensorflow.org/guide/keras/save_and_serialize#registering_the_custom_object for details.]
+Traceback (most recent call last):
+  File "src/Kidney_Disease_Classification/pipeline/stage_02_prepare_base_model.py", line 30, in <module>
+    pipeline.main()
+  File "src/Kidney_Disease_Classification/pipeline/stage_02_prepare_base_model.py", line 21, in main
+    base_model.update_base_model()
+  File "c:\users\chirag sharma\desktop\gitdemo\kidney-disease-classification\src\Kidney_Disease_Classification\components\prepare_base_model.py", line 53, in update_base_model
+    self.full_model = self._prepare_full_model(
+  File "c:\users\chirag sharma\desktop\gitdemo\kidney-disease-classification\src\Kidney_Disease_Classification\components\prepare_base_model.py", line 43, in _prepare_full_model
+    full_model.compile(
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\site-packages\keras\saving\legacy\serialization.py", line 368, in class_and_config_for_serialized_keras_object
+    raise ValueError(
+ValueError: Unknown optimizer: 'tf.keras.optimizers.SGD(learning_rate=learning_rate)'. Please ensure you are using a `keras.utils.custom_object_scope` and that this object is included in the scope. See https://www.tensorflow.org/guide/keras/save_and_serialize#registering_the_custom_object for details.
+[2025-07-01 19:54:51,610: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 19:54:51,634: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 19:54:51,643: INFO: common: created directory at: artifacts]
+[2025-07-01 19:54:51,643: INFO: common: created directory at: artifacts]
+[2025-07-01 19:54:53,136: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-01 19:56:07,937: INFO: stage_02_prepare_base_model: *******************]
+[2025-07-01 19:56:07,937: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare Base Model Stage started <<<<<<]
+[2025-07-01 19:56:07,946: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 19:56:07,946: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 19:56:07,946: INFO: common: created directory at: artifacts]
+[2025-07-01 19:56:07,946: INFO: common: created directory at: artifacts]
+[2025-07-01 19:56:08,599: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-01 19:56:08,864: ERROR: stage_02_prepare_base_model: Unknown optimizer: 'tf.keras.optimizers.SGD(learning_rate=learning_rate)'. Please ensure you are using a `keras.utils.custom_object_scope` and that this object is included in the scope. See https://www.tensorflow.org/guide/keras/save_and_serialize#registering_the_custom_object for details.]
+Traceback (most recent call last):
+  File "src/Kidney_Disease_Classification/pipeline/stage_02_prepare_base_model.py", line 30, in <module>
+    pipeline.main()
+  File "src/Kidney_Disease_Classification/pipeline/stage_02_prepare_base_model.py", line 21, in main
+    base_model.update_base_model()
+  File "c:\users\chirag sharma\desktop\gitdemo\kidney-disease-classification\src\Kidney_Disease_Classification\components\prepare_base_model.py", line 53, in update_base_model
+    self.full_model = self._prepare_full_model(
+  File "c:\users\chirag sharma\desktop\gitdemo\kidney-disease-classification\src\Kidney_Disease_Classification\components\prepare_base_model.py", line 43, in _prepare_full_model
+    full_model.compile(
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Chirag Sharma\anaconda3\envs\Kidney\lib\site-packages\keras\saving\legacy\serialization.py", line 368, in class_and_config_for_serialized_keras_object
+    raise ValueError(
+ValueError: Unknown optimizer: 'tf.keras.optimizers.SGD(learning_rate=learning_rate)'. Please ensure you are using a `keras.utils.custom_object_scope` and that this object is included in the scope. See https://www.tensorflow.org/guide/keras/save_and_serialize#registering_the_custom_object for details.
+[2025-07-01 19:59:06,524: INFO: stage_02_prepare_base_model: *******************]
+[2025-07-01 19:59:06,524: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare Base Model Stage started <<<<<<]
+[2025-07-01 19:59:06,532: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 19:59:06,532: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 19:59:06,532: INFO: common: created directory at: artifacts]
+[2025-07-01 19:59:06,532: INFO: common: created directory at: artifacts]
+[2025-07-01 19:59:07,274: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-01 19:59:07,620: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare Base Model Stage completed <<<<<<
+
+x==========x]
+[2025-07-01 19:59:24,047: INFO: stage_03_model_training: *******************]
+[2025-07-01 19:59:24,047: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-07-01 19:59:24,047: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 19:59:24,056: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 19:59:24,056: INFO: common: created directory at: artifacts]
+[2025-07-01 19:59:24,056: INFO: common: created directory at: artifacts\training]
+[2025-07-01 22:51:32,815: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-07-01 22:51:56,327: INFO: stage_04_model_evaluation: *******************]
+[2025-07-01 22:51:56,328: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-07-01 22:51:56,333: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-01 22:51:56,337: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-01 22:51:56,338: INFO: common: created directory at: artifacts]
+[2025-07-01 22:58:17,302: INFO: common: json file saved at: scores.json]
+[2025-07-01 22:58:17,306: INFO: common: json file saved at: scores.json]
+[2025-07-01 22:58:17,308: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-07-01 22:59:14,741: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.69.98.185:8080]
+[2025-07-01 22:59:14,742: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-01 22:59:14,745: INFO: _internal:  * Restarting with stat]
+[2025-07-01 22:59:21,154: WARNING: _internal:  * Debugger is active!]
+[2025-07-01 22:59:21,170: INFO: _internal:  * Debugger PIN: 250-466-829]
+[2025-07-01 22:59:39,126: INFO: _internal: 127.0.0.1 - - [01/Jul/2025 22:59:39] "GET / HTTP/1.1" 200 -]
+[2025-07-01 23:00:04,761: INFO: _internal: 127.0.0.1 - - [01/Jul/2025 23:00:04] "POST /predict HTTP/1.1" 200 -]
+[2025-07-01 23:00:30,413: INFO: _internal: 127.0.0.1 - - [01/Jul/2025 23:00:30] "POST /predict HTTP/1.1" 200 -]
+[2025-07-01 23:00:46,991: INFO: _internal: 127.0.0.1 - - [01/Jul/2025 23:00:46] "POST /predict HTTP/1.1" 200 -]
+[2025-07-01 23:01:03,528: INFO: _internal: 127.0.0.1 - - [01/Jul/2025 23:01:03] "POST /predict HTTP/1.1" 200 -]
+[2025-07-01 23:01:23,655: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000150567794C0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-07-01 23:01:23,659: INFO: _internal: 127.0.0.1 - - [01/Jul/2025 23:01:23] "POST /predict HTTP/1.1" 200 -]

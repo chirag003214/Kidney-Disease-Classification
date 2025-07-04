@@ -8,7 +8,7 @@ class PredictionPipeline:
 
     def predict(self):
         # Load model
-        model = tf.keras.models.load_model("prediction_model/model.h5")
+        model = tf.keras.models.load_model("artifacts/training/model.h5")
 
         # Preprocess image
         img = image.load_img(self.filename, target_size=(224, 224))
